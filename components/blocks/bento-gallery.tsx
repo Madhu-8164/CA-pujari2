@@ -94,72 +94,74 @@ export function BentoGallery() {
         </motion.div>
 
         {/* ── Phase 2: 2x2 Jigsaw Assembly ── */}
-        <div className="absolute inset-0 z-10 w-full h-full grid grid-cols-2 grid-rows-2 gap-0">
-          
-          {/* Top-Left Quadrant */}
-          <motion.div
-            style={{ x: q1X, y: q1Y, opacity: q1Op, scale: q1Sc }}
-            className="relative overflow-hidden w-full h-full will-change-transform"
-          >
-            <div className="absolute top-0 left-0 w-[200%] h-[200%]">
-              <Image 
-                src={imgSrc} 
-                alt="Infographic TL" 
-                fill 
-                priority
-                className="object-cover" 
-              />
-            </div>
-          </motion.div>
+        <div className="absolute inset-0 z-10 w-full h-full flex items-center justify-center p-4 md:p-8">
+          <div className="relative w-full h-full max-w-[1200px] aspect-[16/9] grid grid-cols-2 grid-rows-2 gap-0 overflow-visible shadow-2xl rounded-lg overflow-hidden lg:scale-110">
+            
+            {/* Top-Left Quadrant */}
+            <motion.div
+              style={{ x: q1X, y: q1Y, opacity: q1Op, scale: q1Sc }}
+              className="relative overflow-hidden w-full h-full will-change-transform"
+            >
+              <div className="absolute top-0 left-0 w-[200%] h-[200%]">
+                <Image 
+                  src={imgSrc} 
+                  alt="Infographic TL" 
+                  fill 
+                  priority
+                  className="object-cover" 
+                />
+              </div>
+            </motion.div>
 
-          {/* Top-Right Quadrant */}
-          <motion.div
-            style={{ x: q2X, y: q2Y, opacity: q2Op, scale: q2Sc }}
-            className="relative overflow-hidden w-full h-full will-change-transform"
-          >
-            <div className="absolute top-0 left-[-100%] w-[200%] h-[200%]">
-              <Image 
-                src={imgSrc} 
-                alt="Infographic TR" 
-                fill 
-                priority
-                className="object-cover" 
-              />
-            </div>
-          </motion.div>
+            {/* Top-Right Quadrant */}
+            <motion.div
+              style={{ x: q2X, y: q2Y, opacity: q2Op, scale: q2Sc }}
+              className="relative overflow-hidden w-full h-full will-change-transform"
+            >
+              <div className="absolute top-0 left-[-100%] w-[200%] h-[200%]">
+                <Image 
+                  src={imgSrc} 
+                  alt="Infographic TR" 
+                  fill 
+                  priority
+                  className="object-cover" 
+                />
+              </div>
+            </motion.div>
 
-          {/* Bottom-Left Quadrant */}
-          <motion.div
-            style={{ x: q3X, y: q3Y, opacity: q3Op, scale: q3Sc }}
-            className="relative overflow-hidden w-full h-full will-change-transform"
-          >
-            <div className="absolute top-[-100%] left-0 w-[200%] h-[200%]">
-              <Image 
-                src={imgSrc} 
-                alt="Infographic BL" 
-                fill 
-                priority
-                className="object-cover" 
-              />
-            </div>
-          </motion.div>
+            {/* Bottom-Left Quadrant */}
+            <motion.div
+              style={{ x: q3X, y: q3Y, opacity: q3Op, scale: q3Sc }}
+              className="relative overflow-hidden w-full h-full will-change-transform"
+            >
+              <div className="absolute top-[-100%] left-0 w-[200%] h-[200%]">
+                <Image 
+                  src={imgSrc} 
+                  alt="Infographic BL" 
+                  fill 
+                  priority
+                  className="object-cover" 
+                />
+              </div>
+            </motion.div>
 
-          {/* Bottom-Right Quadrant */}
-          <motion.div
-            style={{ x: q4X, y: q4Y, opacity: q4Op, scale: q4Sc }}
-            className="relative overflow-hidden w-full h-full will-change-transform"
-          >
-            <div className="absolute top-[-100%] left-[-100%] w-[200%] h-[200%]">
-              <Image 
-                src={imgSrc} 
-                alt="Infographic BR" 
-                fill 
-                priority
-                className="object-cover" 
-              />
-            </div>
-          </motion.div>
+            {/* Bottom-Right Quadrant */}
+            <motion.div
+              style={{ x: q4X, y: q4Y, opacity: q4Op, scale: q4Sc }}
+              className="relative overflow-hidden w-full h-full will-change-transform"
+            >
+              <div className="absolute top-[-100%] left-[-100%] w-[200%] h-[200%]">
+                <Image 
+                  src={imgSrc} 
+                  alt="Infographic BR" 
+                  fill 
+                  priority
+                  className="object-cover" 
+                />
+              </div>
+            </motion.div>
 
+          </div>
         </div>
 
       </div>
